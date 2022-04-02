@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="Es-es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
+    <script src="https://kit.fontawesome.com/8eaafd3e49.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="/assets/img/favicon.png">
+    <title>Productos</title>
+</head>
+
+<body>
+    <header class="header-dash">
+        <div>
+        <img id="logodash" src="/assets/img/logo.jpg" alt="Logo alimalandia">
+        <a href="dashboard.html">Home<i class="fa-solid fa-arrow-rotate-left"></i></a>
+    </div>
+    <div class="sesion">
+        <img src="/assets/img/golden.jpg" alt="Golden Retriver">
+        <h5>Bienvenido; <span><a href="login.html"><br>Usuario<i class="fa-solid fa-right-from-bracket"></i></a></span></h5>
+    </div>
+</header>
+
+<section id="dashboard">
+    <article class="menu">
+        <ul>
+            <li class="item1"><a href="dashboard.html"><i class="fa-solid fa-user"></i>Usuarios</a></li>
+            <li class="item1"><a href="login.html"><i class="fa-solid fa-users"></i>Clientes</a></li>
+            <li class="item1"><a href="productos.html"><i class="fa-solid fa-tag"></i>Productos</a></li>
+            <li class="item1"><a href="login.html"><i class="fa-solid fa-cart-shopping"></i>Pedidos</a></li>
+            <li class="item1"><a href="login.html"><i class="fa-solid fa-chart-line"></i>Reportes</a></li>
+        </ul>
+    </article>
+    
+    <article class="contenido">
+    <div class="producto">
+    <div class="aproducto">
+    <img src="assets/img/golden.jpg" alt="Golden Retriver">
+    <h1>Gestión de Productos</h1>
+    <a href="productosadd.html" class="btn-morado">Agregar</a>
+    </div>
+    <form class="frm-busqueda" action="" >
+        <input type="text" name="Producto" placeholder="Ingresa el producto a consultar">
+        <button class="btn-morado">Buscar</button>
+    </form>
+    <table class="table1">
+        <tr>
+            <th>Id Producto</th>
+            <th>Nombre</th>
+            <th>Características</th>
+            <th>Precio</th>
+            <th>Estado</th>
+            <th colspan="2">Acciones</th>
+        </tr>
+        <tr>
+            <td>xxxxxxx</td>
+            <td>xxxxxxx</td>
+            <td>xxxxxxx</td>
+            <td>xxxxxxx</td>
+            <td>xxxxxxx</td>
+            <td><a href="productoeditar.html"><img id="modificar"src="assets/img/modificar.png"></a></td>
+            <td class="int"> <button class="btn-azul">Eliminar</button></td>
+        </tr>
+    </table>
+    </article>
+</section>
+</section>
+</body>
+</html>

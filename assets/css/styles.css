@@ -1,0 +1,92 @@
+:root{
+	--dark-color:#191919;
+	--white-color:#FFFFFF;
+	--purple-color:rgb(117,41,149);
+	--blue-color:#00B2B1;
+	--gray-color:#828282;
+	--ligh-color:#F3F3F3;
+}
+
+.btn-primary{
+	background-color: var(--blue-color);
+	border-color:var(--blue-color);
+}
+.a-1{
+	color: var(--white-color);
+}
+.a-1:hover{
+	color: var(--blue-color);
+}
+.btn-primary:hover{
+	color: var(--blue-color);
+	background-color: transparent;
+	border-color:var(--blue-color);
+}
+.btn-outline-primary{
+	color: var(--purple-color);
+	border-color:var(--purple-color);
+}
+.btn-outline-primary:hover{
+	color: var(--white-color);
+	background-color:var(--purple-color);
+	border-color:var(--purple-color);
+}
+.a-2{
+	color: var(--purple-color);
+}
+.a-2:hover{
+	color: var(--white-color);
+}
+.header-logo img{
+    max-width: 270px;
+}
+/*section*/
+#agenda{
+	margin-top: 0.3rem;
+}
+.agenda-cita{
+	background-image: url(../img/fondo.jpg);
+	padding: 3rem;
+}
+.agenda-cita h1{
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+.agenda-cita h3{
+	font-size: 1.2rem;
+}
+.agenda-promo{
+	background-color: var(--purple-color);
+	padding: 2rem;
+}
+.agenda-promo h1{
+	font-size: 1.6rem;
+	font-weight: 600;
+	color: var(--white-color);
+	text-shadow: 2px 2px 3px var(--dark-color);
+}
+.agenda-promo img{
+	max-width: 250px;
+}
+.section-servicios h2{
+	font-size: 2rem;
+	font-weight: 600;
+	color: var(--purple-color);
+	text-shadow: 2px 2px 3px var(--dark-color);
+}
+a{text-decoration: none;}
+
+/*footer*/
+.box-footer{
+	background-image: url(/assets/img/fondo.jpg);
+}
+.foot h3 {
+	color: white;
+}
+.foot p{
+	color: white;
+}
+.foot i{
+	color: white;
+	font-size: 60px;
+}
