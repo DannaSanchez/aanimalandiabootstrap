@@ -6,7 +6,9 @@
 	--gray-color:#828282;
 	--ligh-color:#F3F3F3;
 }
-
+span{
+    font-weight: bolder;
+}
 .btn-primary{
 	background-color: var(--blue-color);
 	border-color:var(--blue-color);
@@ -68,7 +70,7 @@
 .agenda-promo img{
 	max-width: 250px;
 }
-.section-servicios h2{
+h2{
 	font-size: 2rem;
 	font-weight: 600;
 	color: var(--purple-color);
@@ -89,4 +91,107 @@ a{text-decoration: none;}
 .foot i{
 	color: white;
 	font-size: 60px;
+}
+/*tips mascotas*/
+#equipo img{
+    max-width: 1400px;
+    width: 100%;
+    margin: auto;
+}
+.tsec{
+    color: var(--white-color);
+    background-color: var(--blue-color);
+    font-weight: bolder;
+    text-shadow: 2px 2px 2px var(--dark-color);
+}
+.animacion{
+    background-image: url(../img/fongodato.png);
+    background-color: var(--purple-color);
+    margin: 30px 0px ;
+    padding: 1px;
+    text-align: justify;
+    border-radius: 5px;
+    flex-wrap: wrap;
+}
+.adato, .bdato, .cdato, img{
+    width: 261px;
+    display: flex;
+    cursor: pointer;
+}
+.bdato {
+    border: 5px solid var(--purple-color);
+    width: 270px;
+    height: 405px;
+    border-radius: 5px;
+}
+ .adato, .cdato{
+    border: 5px solid var(--purple-color);
+    width: 270px;
+    height: 384px;
+    border-radius: 5px;
+}
+.aadato:hover, .ccdato:hover{
+    transform: translateY(-375px);
+    transition: 3s ease 1s;
+}
+.bbdato:hover {
+    transform: translateY(-392px);
+    transition: 3s ease 1s;
+}
+.gato{
+    width: 200px;
+}
+/*contactos*/
+.title h1{
+    background-image: url(../img/fondo-titu.png);
+    box-shadow: 1px 1px 10px  #828282;
+}
+.formulario{
+    padding: 1px;
+    text-align: justify;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+}
+
+.formulario img{
+    max-width: 180px;
+    width: 28%;
+}
+.form-control, textarea{
+   border:3px solid var(--blue-color);
+}
+/*servicios*/
+.services{
+    display:flex;
+    padding: 2em;
+    flex-wrap: wrap;
+}
+.service{
+    display:flex;
+    align-items: center;
+    margin: 28px 15px 0 0;
+   
+}
+.service img{
+    width: 140px;
+    margin-right: 1em;
+    
+}
+.service h3{
+    color: var(--dark-color);
+    font-size: 24px;
+}
+/*equipo*/
+.equip img{
+    max-width:200px;
+    width:35%;
+}
+.equip h3, h4{
+    font-weight: bold;
+    margin:15px;
+    text-shadow: 1px 1px 2px var(--dark-color);
 }
