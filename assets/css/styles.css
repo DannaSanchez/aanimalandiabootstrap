@@ -6,6 +6,10 @@
 	--gray-color:#828282;
 	--ligh-color:#F3F3F3;
 }
+*{
+    margin: 0%;
+    padding: 0%;
+}
 span{
     font-weight: bolder;
 }
@@ -25,19 +29,23 @@ span{
 	border-color:var(--blue-color);
 }
 .btn-outline-primary{
-	color: var(--purple-color);
-	border-color:var(--purple-color);
+	color: var(--white-color);
+    border-color:var(--purple-color);
 }
 .btn-outline-primary:hover{
 	color: var(--white-color);
 	background-color:var(--purple-color);
 	border-color:var(--purple-color);
 }
+.btn-outline-primary a:hover{
+	color: var(--purple-color);
+}
 .a-2{
 	color: var(--purple-color);
 }
-.a-2:hover{
-	color: var(--white-color);
+.btn-outline-light{
+    background-color: var(--blue-color);
+    border: transparent;
 }
 .header-logo img{
     max-width: 270px;
@@ -101,17 +109,12 @@ a{text-decoration: none;}
 .tsec{
     color: var(--white-color);
     background-color: var(--blue-color);
-    font-weight: bolder;
+    font-weight: bold;
     text-shadow: 2px 2px 2px var(--dark-color);
 }
 .animacion{
     background-image: url(../img/fongodato.png);
     background-color: var(--purple-color);
-    margin: 30px 0px ;
-    padding: 1px;
-    text-align: justify;
-    border-radius: 5px;
-    flex-wrap: wrap;
 }
 .adato, .bdato, .cdato, img{
     width: 261px;
@@ -201,4 +204,29 @@ a{text-decoration: none;}
 .header-dash a{color: var(--purple-color);}
 .list-group a{
     color: white;
+}
+.list-group{
+    border-radius: 0%;
+}
+.contenido{
+    height: 90vh;
+}
+.list-group-item:hover{
+    padding-left: 12%;
+    transition: all 2s;
+}
+/*productos*/
+.dashboard{
+    border:2px solid black;
+}
+.table{
+    overflow: scroll;
+}
+.title{
+    color: white;
+    background-color: var(--purple-color);
+}
+/*banner*/
+.carousel-item{
+    background-color: var(--purple-color);
 }

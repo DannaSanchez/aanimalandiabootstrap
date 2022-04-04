@@ -16,59 +16,69 @@
 </head>
 
 <body>
-    <header class="header-dash d-flex justify-content-between align-items-center">
-        <div >
-            <img class="logodash m-3" src="/assets/img/logo.jpg" alt="Logo alimalandia">
+    <header class="header-dash row">
+        <div class=" col-12 col-md-6 d-flex  justify-content-center justify-content-md-start align-items-center ">
+            <img class="logodash " style="max-width: 300px;" src="/assets/img/logo.jpg" alt="Logo alimalandia">
+            <a href="dashboard.html"><i class="bi bi-arrow-counterclockwise"></i>Home</a>
         </div>
-        <div class="sesion d-flex justify-content-center align-items-center mr-3 ">
-            <img class="perro rounded-circle" style="max-width: 110px;"  src="/assets/img/golden.jpg" alt="Golden Retriver">
+        <div class="sesion  col-12 col-md-6 d-flex  justify-content-center justify-content-md-end align-items-center">
+            <img class="perro rounded-circle m-2" style="max-width: 100px;"  src="/assets/img/golden.jpg" alt="Golden Retriver">
             <h5 class="p-3">Bienvenido; <span><a href="login.html"><br>Usuario<i class="fa-solid fa-right-from-bracket"></i></a></span></h5>
         </div>
     </header>
-
-<section id="dashboard">
-    <article class="menu">
-        <ul>
-            <li class="item1"><a href="dashboard.html"><i class="fa-solid fa-user"></i>Usuarios</a></li>
-            <li class="item1"><a href="login.html"><i class="fa-solid fa-users"></i>Clientes</a></li>
-            <li class="item1"><a href="productos.html"><i class="fa-solid fa-tag"></i>Productos</a></li>
-            <li class="item1"><a href="login.html"><i class="fa-solid fa-cart-shopping"></i>Pedidos</a></li>
-            <li class="item1"><a href="login.html"><i class="fa-solid fa-chart-line"></i>Reportes</a></li>
-        </ul>
-    </article>
-    
-    <article class="contenido">
-    <div class="producto">
-    <div class="aproducto">
-    <img src="assets/img/golden.jpg" alt="Golden Retriver">
-    <h1>Gestión de Productos</h1>
-    <a href="productosadd.html" class="btn-morado">Agregar</a>
+    <section class=" contenido row bg-light">
+    <div class="list-group col-12 col-md-3 m-0 bg-dark ">
+        <button type="button" class="bg-dark text-white list-group-item list-group-item-action" aria-current="true">
+            <a href="dashboard.html"><i class="bi bi-person-fill"></i>Usuarios</a>
+        </button>
+        <button type="button" class="bg-dark text-white list-group-item list-group-item-action"><a href="login.html"><i class="bi bi-people-fill"></i>Clientes</a></button>
+        <button type="button" class="bg-dark text-white list-group-item list-group-item-action"><a href="productos.html"><i class="bi bi-tag-fill"></i></i>Productos</a></button>
+        <button type="button" class="bg-dark text-white list-group-item list-group-item-action"><a href="login.html"><i class="bi bi-cart-fill"></i></i>Pedidos</a></button>
+        <button type="button" class="bg-dark text-white list-group-item list-group-item-action"><a href="login.html"><i class="bi bi-arrow-up-right"></i>Reportes</a></button>
     </div>
-    <form class="frm-busqueda" action="" >
-        <input type="text" name="Producto" placeholder="Ingresa el producto a consultar">
-        <button class="btn-morado">Buscar</button>
-    </form>
-    <table class="table1">
-        <tr>
-            <th>Id Producto</th>
-            <th>Nombre</th>
-            <th>Características</th>
-            <th>Precio</th>
-            <th>Estado</th>
-            <th colspan="2">Acciones</th>
-        </tr>
-        <tr>
-            <td>xxxxxxx</td>
-            <td>xxxxxxx</td>
-            <td>xxxxxxx</td>
-            <td>xxxxxxx</td>
-            <td>xxxxxxx</td>
-            <td><a href="productoeditar.html"><img id="modificar"src="assets/img/modificar.png"></a></td>
-            <td class="int"> <button class="btn-azul">Eliminar</button></td>
-        </tr>
-    </table>
+    
+    <article class="contenido col-12 col-md-9 bg-light text-dark m-0">
+    <div class="row  text-center align-items-center p-3 ">
+    <div class="col-3">
+        <img class=" rounded-circle m-2 col-4" style="max-width: 110px;" src="/assets/img/golden.jpg" alt="Golden Retriver">
+    </div>
+    <div class="col-5"> 
+        <h1>Gestión de Productos</h1>
+    </div>
+    <div class="col-4">
+    <button type="button" class="btn btn-outline-primary mb-1 "><a class="a-2" href="productosadd.html"><i class="bi bi-person-plus-fill"></i>Registrar </button></a>
+    </div>
+    </div>
+          <form class=" d-flex align-items-center justify-content-center">
+            <input class="dashboard form-control  me-2 " type="search" placeholder="Search" aria-label="Search">
+            <button class=" btn btn-outline-primary m-3" type="submit"><a class="a-2" href="">Search</a> </button>
+          </form>
+<div class="table-responsive" >
+<table class="table text-center">
+  <thead class="title">
+    <tr class="border border-3 border-dark">
+      <th class="border border-3 border-dark" scope="col">Id Producto</th>
+      <th class="border border-3 border-dark" scope="col">Nombre</th>
+      <th class="border border-3 border-dark" scope="col">Características</th>
+      <th class="border border-3 border-dark" scope="col">Precio</th>
+      <th class="border border-3 border-dark" scope="col">Estado</th>
+      <th class="border border-3 border-dark" colspan="2" scope="col">Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border border-3 border-dark">
+      <th scope="row">xxxxxxx</th>
+      <td class="border border-3 border-dark">xxxxxxx</td>
+      <td class="border border-3 border-dark">xxxxxxx</td>
+      <td class="border border-3 border-dark">xxxxxxx</td>
+      <td class="border border-3 border-dark">xxxxxxx</td>
+      <td class="border border-3 border-dark"><a href="productoeditar.html"><img style="max-width: 50px;" src="/assets/img/modificar.png"></a></td>
+      <td class=""><button type="button" class="btn btn-primary p-1 "><a class="a-1" href="/views/login.html">Eliminar</button></a></td>
+    </tr>
+  </tbody>
+</table>
     </article>
-</section>
-</section>
+</div>
+
 </body>
 </html>
