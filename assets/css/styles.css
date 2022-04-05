@@ -38,7 +38,7 @@ span{
 	border-color:var(--purple-color);
 }
 .btn-outline-primary a:hover{
-	color: var(--purple-color);
+	color: var(--white-color);
 }
 .a-2{
 	color: var(--purple-color);
@@ -150,14 +150,7 @@ a{text-decoration: none;}
     box-shadow: 1px 1px 10px  #828282;
 }
 .formulario{
-    padding: 1px;
-    text-align: justify;
     border-radius: 5px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    margin: 15px;
 }
 
 .formulario img{
@@ -229,4 +222,27 @@ a{text-decoration: none;}
 /*banner*/
 .carousel-item{
     background-color: var(--purple-color);
+}
+.product{
+    background-color:var(--purple-color);
+}
+.product:hover{
+	color: var(--white-color);
+	background-color:transparent;
+	border-color:var(--purple-color);
+}
+.product a{
+	color: var(--white-color);
+}
+.product a:hover{
+	color: var(--purple-color);
+}
+.banner{
+    background-color: rgba(117, 41, 149, 0.383);
+    padding: 50px;
+}
+.banner h1{
+    color: #FFFFFF;
+    font-size: 100px;
+    text-shadow: 2px 2px 3px var(--dark-color);
 }
