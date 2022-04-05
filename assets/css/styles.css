@@ -243,6 +243,6 @@ a{text-decoration: none;}
 }
 .banner h1{
     color: #FFFFFF;
-    font-size: 100px;
+    font-size: 50px;
     text-shadow: 2px 2px 3px var(--dark-color);
 }
